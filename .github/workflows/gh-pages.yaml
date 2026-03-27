@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.10.7'  # known to support --web-renderer
       - uses: bluefireteam/flutter-gh-pages@v8
         with:
           baseHref: /Flutter-Space-Shooter/
-          webRenderer: canvaskit
