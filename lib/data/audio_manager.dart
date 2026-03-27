@@ -1,9 +1,9 @@
 import 'package:flame/game.dart';
 import 'package:flame_audio/flame_audio.dart';
+import 'package:flame_audio/audio_pool.dart';
 import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 class AudioManager {
-
   static late final FlameGame game;
 
   static String? currentMusicPlaying;
@@ -26,7 +26,12 @@ class AudioManager {
 
   static var soundFilePools = <String, AudioPool>{};
 
-  static void playMusic(String music, {double volume = 0.5, bool loop = true, bool forceRestart = true}) {
+  static void playMusic(
+    String music, {
+    double volume = 0.5,
+    bool loop = true,
+    bool forceRestart = true,
+  }) {
     final audioFile = musicFiles[music];
     if (audioFile == null) {
       LogDebug.printToHUD(game, 'Music $music not found!');
@@ -37,14 +42,17 @@ class AudioManager {
       LogDebug.printToHUD(game, 'Already playing music $music');
       return;
     }
-    LogDebug.printToHUD(game, 'Playing music $music${forceRestart? 'forceRestart=TRUE':''}.');
+    LogDebug.printToHUD(
+      game,
+      'Playing music $music${forceRestart ? 'forceRestart=TRUE' : ''}.',
+    );
     FlameAudio.bgm.initialize();
     currentMusicPlaying = music;
     FlameAudio.bgm.play(audioFile, volume: volume);
   }
 
   /// Returns true if music is playing, false otherwise.
-  /// 
+  ///
   /// If [musicName] is provided, it will return true if the music with that name is playing.
   static bool isMusicPlaying({String? musicName}) {
     if (musicName != null) {
@@ -72,7 +80,11 @@ class AudioManager {
         throw ArgumentError("Name of sound '$soundFile' not found!");
       }
       await FlameAudio.audioCache.load(soundFile);
-      soundFilePools[name] = await FlameAudio.createPool(soundFile, minPlayers: 1, maxPlayers: 2);
+      soundFilePools[name] = await FlameAudio.createPool(
+        soundFile,
+        minPlayers: 1,
+        maxPlayers: 2,
+      );
     }
     LogDebug.printToHUD(game, 'AudioManager initialized.');
   }

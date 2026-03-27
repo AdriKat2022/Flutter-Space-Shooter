@@ -7,10 +7,12 @@ environment:
   sdk: ^3.11.4
 
 dependencies:
-  flame_audio: ^2.12.0 
-  flame: ^1.36.0
   flutter:
     sdk: flutter
+  flame: ^1.21.0
+  flame_audio: ^1.2.0
+  flutter_bloc: ^8.1.0 # For BLOC state management
+  equatable: ^2.0.5 # Optional, helps with state comparison in BLOC
 
 dev_dependencies:
   flutter_test:
@@ -19,3 +21,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/backgrounds/
+    - assets/images/ships/
+    - assets/images/bullets/
+    - assets/images/effects/
+    - assets/images/ui/
+    - assets/images/ui/buttons/
+    - assets/audio/sounds/
+    - assets/audio/musics/
+
+  fonts:
+    - family: GoodTiming
+      fonts:
+        - asset: fonts/good_timing.otf
+    - family: FragileBombers
+      fonts:
+        - asset: fonts/fragile_bombers.otf
