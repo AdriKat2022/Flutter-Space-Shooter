@@ -1,7 +1,7 @@
 import 'package:flame/collisions.dart';
-import 'package:test_project/main.dart';
+import 'package:flutter_space_shooter/main.dart';
 import 'package:flame/components.dart';
-import 'package:test_project/utils/poolable_object.dart';
+import 'package:flutter_space_shooter/utils/poolable_object.dart';
 
 class Bullet extends SpriteAnimationComponent with HasGameReference<SpaceShooterGame> implements PoolableObject {
 

@@ -4,14 +4,14 @@ import 'package:flame/game.dart';
 import 'package:flame/parallax.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:test_project/ui/game_ui.dart';
-import 'package:test_project/components/enemy.dart';
-import 'package:test_project/components/wave.dart';
-import 'package:test_project/components/player.dart';
-import 'package:test_project/data/audio_manager.dart';
-import 'package:test_project/data/waves_data_container.dart';
-import 'package:test_project/utils/log_debug.dart';
-import 'package:test_project/utils/object_pool.dart';
+import 'package:flutter_space_shooter/ui/game_ui.dart';
+import 'package:flutter_space_shooter/components/enemy.dart';
+import 'package:flutter_space_shooter/components/wave.dart';
+import 'package:flutter_space_shooter/components/player.dart';
+import 'package:flutter_space_shooter/data/audio_manager.dart';
+import 'package:flutter_space_shooter/data/waves_data_container.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
+import 'package:flutter_space_shooter/utils/object_pool.dart';
 
 class SpaceShooterGame extends FlameGame with PanDetector, HasCollisionDetection, KeyboardEvents {
 

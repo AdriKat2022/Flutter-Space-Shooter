@@ -1,4 +1,4 @@
-# test_project
+# flutter_space_shooter
 A small Shoot'Em Up! project that aims at demonstrating my capacities to adapt to a new game engine.
 
 # Objectives (TODO LIST)

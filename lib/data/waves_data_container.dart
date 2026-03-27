@@ -1,5 +1,5 @@
 import 'package:flame/game.dart';
-import 'package:test_project/data/wave_data.dart';
+import 'package:flutter_space_shooter/data/wave_data.dart';
 
 class WavesDataContainer {
 

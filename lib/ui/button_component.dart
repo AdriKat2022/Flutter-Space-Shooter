@@ -1,7 +1,7 @@
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
-import 'package:test_project/data/audio_manager.dart';
+import 'package:flutter_space_shooter/data/audio_manager.dart';
 
 /// Makes a simple button that is interactible with the user (Mouse only).
 class ButtonComponent extends SpriteComponent with TapCallbacks, HoverCallbacks {

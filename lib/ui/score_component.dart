@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/text.dart';
-import 'package:test_project/data/font_palette.dart';
+import 'package:flutter_space_shooter/data/font_palette.dart';
 
 class ScoreComponent extends TextComponent {
   int score = 0;

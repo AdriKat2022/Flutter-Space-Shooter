@@ -1,7 +1,7 @@
 import 'package:flame/game.dart';
 import 'package:flame_audio/audio_pool.dart';
 import 'package:flame_audio/flame_audio.dart';
-import 'package:test_project/utils/log_debug.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 class AudioManager {
 

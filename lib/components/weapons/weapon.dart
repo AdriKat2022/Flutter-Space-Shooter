@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flame/components.dart';
 import 'package:flame/rendering.dart';
-import 'package:test_project/components/bullet.dart';
-import 'package:test_project/data/audio_manager.dart';
-import 'package:test_project/utils/object_pool.dart';
+import 'package:flutter_space_shooter/components/bullet.dart';
+import 'package:flutter_space_shooter/data/audio_manager.dart';
+import 'package:flutter_space_shooter/utils/object_pool.dart';
 
 /// Base class for all weapons.
 abstract class Weapon<T extends Bullet> {

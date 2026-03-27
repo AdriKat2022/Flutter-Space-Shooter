@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flame/components.dart';
-import 'package:test_project/components/bullet.dart';
-import 'package:test_project/components/weapons/weapon.dart';
-import 'package:test_project/utils/log_debug.dart';
+import 'package:flutter_space_shooter/components/bullet.dart';
+import 'package:flutter_space_shooter/components/weapons/weapon.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 /// The simplest weapon, shoots straight bullets.
 class StraightGun extends Weapon<Bullet> {

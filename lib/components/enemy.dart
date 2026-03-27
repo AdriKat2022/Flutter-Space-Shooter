@@ -2,14 +2,14 @@ import 'package:flame/collisions.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/components.dart';
 import 'package:flutter/animation.dart';
-import 'package:test_project/components/bullet.dart';
-import 'package:test_project/components/damageable_component.dart';
-import 'package:test_project/data/audio_manager.dart';
-import 'package:test_project/data/move_strategies.dart';
-import 'package:test_project/effects/explosion.dart';
-import 'package:test_project/effects/sprite_color_flash.dart';
-import 'package:test_project/main.dart';
-import 'package:test_project/utils/poolable_object.dart';
+import 'package:flutter_space_shooter/components/bullet.dart';
+import 'package:flutter_space_shooter/components/damageable_component.dart';
+import 'package:flutter_space_shooter/data/audio_manager.dart';
+import 'package:flutter_space_shooter/data/move_strategies.dart';
+import 'package:flutter_space_shooter/effects/explosion.dart';
+import 'package:flutter_space_shooter/effects/sprite_color_flash.dart';
+import 'package:flutter_space_shooter/main.dart';
+import 'package:flutter_space_shooter/utils/poolable_object.dart';
 
 class Enemy extends SpriteAnimationComponent with HasGameReference<SpaceShooterGame>, CollisionCallbacks, DamageableComponent implements PoolableObject {
 

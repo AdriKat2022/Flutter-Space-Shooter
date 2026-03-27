@@ -1,5 +1,5 @@
 import 'package:flame/game.dart';
-import 'package:test_project/data/move_strategies.dart';
+import 'package:flutter_space_shooter/data/move_strategies.dart';
 
 /// Contains all the enemies that will spawn in a wave, and the delay before the wave starts.
 class WaveData {

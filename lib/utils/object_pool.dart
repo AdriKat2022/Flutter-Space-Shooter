@@ -1,5 +1,5 @@
 import 'package:flame/components.dart';
-import 'package:test_project/utils/poolable_object.dart';
+import 'package:flutter_space_shooter/utils/poolable_object.dart';
 
 /// Provide a pool pattern for objects of type [T].
 ///

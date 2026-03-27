@@ -3,14 +3,14 @@ import 'dart:ui';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/rendering.dart';
-import 'package:test_project/components/damageable_component.dart';
-import 'package:test_project/components/enemy.dart';
-import 'package:test_project/components/weapons/straight_gun.dart';
-import 'package:test_project/components/weapons/weapon.dart';
-import 'package:test_project/data/audio_manager.dart';
-import 'package:test_project/effects/sprite_color_flash.dart';
-import 'package:test_project/main.dart';
-import 'package:test_project/utils/log_debug.dart';
+import 'package:flutter_space_shooter/components/damageable_component.dart';
+import 'package:flutter_space_shooter/components/enemy.dart';
+import 'package:flutter_space_shooter/components/weapons/straight_gun.dart';
+import 'package:flutter_space_shooter/components/weapons/weapon.dart';
+import 'package:flutter_space_shooter/data/audio_manager.dart';
+import 'package:flutter_space_shooter/effects/sprite_color_flash.dart';
+import 'package:flutter_space_shooter/main.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 class Player extends SpriteAnimationComponent with HasGameReference<SpaceShooterGame>, CollisionCallbacks, DamageableComponent {
 

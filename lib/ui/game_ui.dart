@@ -1,14 +1,14 @@
 
 import 'package:flame/components.dart';
-import 'package:test_project/ui/button_component.dart';
-import 'package:test_project/ui/color_selector.dart';
-import 'package:test_project/ui/hearts_bar.dart';
-import 'package:test_project/ui/score_component.dart';
-import 'package:test_project/ui/toogle_button.dart';
-import 'package:test_project/data/font_palette.dart';
-import 'package:test_project/effects/fade_out_text_notification.dart';
-import 'package:test_project/main.dart';
-import 'package:test_project/utils/log_debug.dart';
+import 'package:flutter_space_shooter/ui/button_component.dart';
+import 'package:flutter_space_shooter/ui/color_selector.dart';
+import 'package:flutter_space_shooter/ui/hearts_bar.dart';
+import 'package:flutter_space_shooter/ui/score_component.dart';
+import 'package:flutter_space_shooter/ui/toogle_button.dart';
+import 'package:flutter_space_shooter/data/font_palette.dart';
+import 'package:flutter_space_shooter/effects/fade_out_text_notification.dart';
+import 'package:flutter_space_shooter/main.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 class GameUI extends Component with HasGameReference<SpaceShooterGame>{
 

@@ -1,9 +1,9 @@
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flutter/material.dart';
-import 'package:test_project/data/font_palette.dart';
-import 'package:test_project/main.dart';
-import 'package:test_project/utils/log_debug.dart';
+import 'package:flutter_space_shooter/data/font_palette.dart';
+import 'package:flutter_space_shooter/main.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
 
 class FadingNotificationText extends TextComponent with HasGameReference<SpaceShooterGame> implements OpacityProvider {
 

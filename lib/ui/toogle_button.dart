@@ -2,8 +2,8 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/painting.dart';
-import 'package:test_project/data/font_palette.dart';
-import 'package:test_project/ui/button_component.dart';
+import 'package:flutter_space_shooter/data/font_palette.dart';
+import 'package:flutter_space_shooter/ui/button_component.dart';
 
 class ToogleButton extends ButtonComponent {
 

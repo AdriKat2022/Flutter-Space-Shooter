@@ -1,9 +1,9 @@
 import 'package:flame/components.dart';
-import 'package:test_project/main.dart';
-import 'package:test_project/components/enemy.dart';
-import 'package:test_project/utils/log_debug.dart';
-import 'package:test_project/utils/object_pool.dart';
-import 'package:test_project/data/wave_data.dart';
+import 'package:flutter_space_shooter/main.dart';
+import 'package:flutter_space_shooter/components/enemy.dart';
+import 'package:flutter_space_shooter/utils/log_debug.dart';
+import 'package:flutter_space_shooter/utils/object_pool.dart';
+import 'package:flutter_space_shooter/data/wave_data.dart';
 
 /// In a wave, enemies are spawned in a sequence, with a delay between each enemy, it should be data driven.
 class WaveManager extends Component with HasGameReference<SpaceShooterGame> {
