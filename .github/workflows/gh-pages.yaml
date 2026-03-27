@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
+      # 1️⃣ Checkout the repository
       - uses: actions/checkout@v4
 
-      # 2️⃣ Install Flutter (latest stable)
+      # 2️⃣ Install Flutter 3.10.7
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: stable
+          flutter-version: '3.10.7'
 
-      # 3️⃣ Enable web
+      # 3️⃣ Enable Flutter Web
       - name: Enable Flutter Web
         run: flutter config --enable-web
 
@@ -26,11 +26,11 @@ jobs:
       - name: Get Flutter packages
         run: flutter pub get
 
-      # 5️⃣ Build web (no --web-renderer)
+      # 5️⃣ Build Flutter web
       - name: Build Flutter Web
         run: flutter build web --release --base-href /Flutter-Space-Shooter/
 
-      # 6️⃣ Deploy to GitHub Pages using peaceiris
+      # 6️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
