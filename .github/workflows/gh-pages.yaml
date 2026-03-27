@@ -1,40 +1,14 @@
-name: Flutter Web Deploy
+name: Gh-Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repository
       - uses: actions/checkout@v4
-
-      # 2️⃣ Install Flutter 3.10.7
       - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.10.7'
-
-      # 3️⃣ Enable Flutter Web
-      - name: Enable Flutter Web
-        run: flutter config --enable-web
-
-      # 4️⃣ Get dependencies
-      - name: Get Flutter packages
-        run: flutter pub get
-
-      # 5️⃣ Build Flutter web
-      - name: Build Flutter Web
-        run: flutter build web --release --base-href /Flutter-Space-Shooter/
-
-      # 6️⃣ Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web
-          user_name: "GitHub Actions"
-          user_email: "actions@github.com"
+      - uses: bluefireteam/flutter-gh-pages@v9
